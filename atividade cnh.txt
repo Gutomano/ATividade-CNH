@@ -1,0 +1,54 @@
+import java.util.Scanner;
+// importarção de uma biblioteca.
+
+class HelloWorld 
+{
+    public static void main(String[] args) 
+    {
+        int ferrari,gt,gtr;
+        //variaveis.
+    
+        Scanner ler = new Scanner(System.in);
+        // criação de um Scanner para fazer a leitura do numero digitado pelo usuario.
+
+        System.out.printf("Informacao: responda com 1 para sim e com 2 para nao. \n"); 
+        //As informações que vão aparecer para o usario.
+        
+        
+            System.out.printf("Voce foi aprovado no exame teorico?");
+         //As informações que vão aparecer para o usario. 
+            
+        ferrari = ler.nextInt();
+        //lietor do numero recebi/digitado pelo usuario.
+        
+        System.out.printf("Voce foi aprovado no exame piscotcnico? ");
+        //As informações que vão aparecer para o usario. 
+        
+        gt = ler.nextInt();
+        //lietor do numero recebi/digitado pelo usuario.
+        
+        System.out.printf("Voce passou no exame de direcao?");
+         //As informações que vão aparecer para o usario.
+        
+        gtr = ler.nextInt();
+        //lietor do numero recebi/digitado pelo usuario.
+         
+        if ( ferrari == 1 && gt == 1 && gtr == 1)
+        //condição de comparação dos numeros digitados pelo usuario.
+    
+    
+      {
+           System.out.printf("Parabens voce foi aprovado");
+           //Mensagem que ira aparecer se o usuario for aprovado.
+       }
+       else
+       //é uma condição falsa.
+     {
+        System.out.printf("Desculpe mas voce foi reprovado");
+        //Caso o usuario não tenha uma das caracteristicas aparecera esta mensagem em sua tela 
+    }   
+    
+    }
+     
+       
+}
